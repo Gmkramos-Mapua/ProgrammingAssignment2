@@ -9,7 +9,7 @@ makeCacheMatrix <- function(x = matrix()){
   getInverse <- function() {inv}
   list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
-
+# Code above shows the caching the mean of a vector and caching the inverse of a matrix
 cacheSolve <- function(x, ...){
   inv <- x$getInverse()
   if(!is.null(inv)){
